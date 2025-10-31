@@ -1,0 +1,162 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300..900&display=swap');
+
+/* Shared styles */
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    text-align: left;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    background: #000000;
+    color: var(--ctxt);
+}
+header {
+    font-size: 10px;
+    line-height: 10px;
+    margin: 10px;
+    display: flex
+;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+}
+p {
+    text-align: left;
+    color: #ffffff;
+    position: absolute;
+    left: 15px;
+
+}
+a:hover,
+a:focus,
+a:active {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a, a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+img {
+    border-radius: 0px;
+    margin: 10px;
+}
+
+
+/* Top-right navigation */
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top-right a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-right a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom-left navigation */
+.bottom-left {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-left a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-left a:hover {
+    text-decoration: underline;
+}
+
+/* Page-specific styles */
+
+/* Index page */
+body.index-page {
+    background-image: url('04.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000000;
+}
+
+p {
+    text-align: left;
+    color: #ffffff;
+}
+
+/* Contact page */
+body.contact-page {
+    background-image: none;
+    background-color: #222222;
+}
+body.contact-page, 
+body.contact-page p {
+    position: relative;
+    left: 15px
+}
+body.contact-page h2, 
+body.contact-page a {
+    color: #ffffff;
+}
+
+p {
+    text-align: left;
+    color: #ffffff;
+}
+
+body.contact-page p {
+position: relative;
+left: 15px
+}
+
+
+/* About page */
+body.about-page, body.about-page p, body.about-page h2 {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+p {
+    color: #ffffff;
+}
+
+
+/* 3D page */
+body.page-3d {
+    background-image: url('3Dbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000000;
+}
+
