@@ -629,6 +629,19 @@ body.commissioned-page .image-gallery img {
   margin: 0;
 }
 
+/* Swap sizes for last two images in SUSU gallery */
+body.commissioned-page .susu-gallery > div:nth-child(9) {
+  width: 25%;
+  align-self: flex-end;
+  margin-top: 60px;
+}
+
+body.commissioned-page .susu-gallery > div:nth-child(10) {
+  width: 35%;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
 body.commissioned-page section p.section-heading {
   font-size: 1.4rem;
   font-weight: 500;
