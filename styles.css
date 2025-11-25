@@ -528,14 +528,45 @@ body.lichen-page .image-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   margin: 60px auto 30px;
   max-width: 1200px;
+  padding: 0 20px;
 }
 
 body.lichen-page .image-gallery > div {
-  flex: 0 1 calc(33.333% - 20px);
-  max-width: calc(33.333% - 20px);
+  flex: 0 0 auto;
+  margin-bottom: 20px;
+}
+
+body.lichen-page .image-gallery > div:nth-child(5n+1) {
+  width: 22%;
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+body.lichen-page .image-gallery > div:nth-child(5n+2) {
+  width: 40%;
+  align-self: flex-end;
+  margin-top: 40px;
+}
+
+body.lichen-page .image-gallery > div:nth-child(5n+3) {
+  width: 28%;
+  align-self: center;
+  margin-top: 80px;
+}
+
+body.lichen-page .image-gallery > div:nth-child(5n+4) {
+  width: 35%;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+body.lichen-page .image-gallery > div:nth-child(5n+5) {
+  width: 25%;
+  align-self: flex-end;
+  margin-top: 60px;
 }
 
 body.lichen-page .image-gallery img {
