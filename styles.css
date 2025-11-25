@@ -479,6 +479,18 @@ body.page-3d .image-gallery > div {
   max-width: calc(33.333% - 40px);
 }
 
+/* Terra gallery - 2 images per row */
+body.page-3d .terra-gallery > div {
+  flex: 0 1 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+}
+
+/* Hessz gallery - 3 images in a row */
+body.page-3d .hessz-gallery > div {
+  flex: 0 1 calc(33.333% - 27px);
+  max-width: calc(33.333% - 27px);
+}
+
 body.page-3d .image-gallery img {
   width: 100%;
   height: auto;
@@ -521,6 +533,29 @@ body.commissioned-page .subaquatica-gallery .single-center img {
 body.page-3d .subaquatica-gallery > div:not(.featured-image):not(.single-center) {
   flex: 0 1 calc(50% - 40px);
   max-width: calc(50% - 40px);
+}
+
+/* Two column gallery for multimedia page - displays images side by side */
+body.page-3d .two-column-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto 30px;
+  max-width: 1200px;
+  padding: 0;
+  width: 95%;
+}
+
+body.page-3d .two-column-gallery > div {
+  flex: 1 1 0;
+  max-width: calc(50% - 20px);
+}
+
+body.page-3d .two-column-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Image gallery for photography page */
