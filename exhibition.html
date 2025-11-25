@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition views</title>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="commissioned-page">
+  <div class="top-right">
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+    <label class="nav-toggle-label" for="nav-toggle" aria-label="open menu"></label>
+      <div class="nav-links">
+      <a href="photography.html">photography</a>
+      <a href="commissioned.html">commissioned</a>
+      <a href="multimedia.html">multimedia</a>
+      <a href="about.html" class="about-link">about</a>
+      </div>
+  </div>
+  <header>
+    <div>
+      <h1>
+        <a href="index.html">Ábrahám Noémi</a>
+      </h1>
+    </div>
+  </header>
+
+  <div>
+    <section>
+      <p class="section-heading">Exhibition views</p>
+      
+      <p class="project-title">Képminimum, (MOME Photography BA Graduation Show) // Artus Studio, Budapest, 2023</p>
+      <br>
+      <p class="project-credits">Installation view from the work Under Construction. The installation form refers back to the title of the project, its execution evokes the process of construction planning and is based on the visuality of graph paper.</p>
+      <p class="project-credits">Digital print mounted on foam board, 3 m x 2,4 m</p>
+      
+      <div class="image-gallery subaquatica-gallery">
+        <div data-aos="fade-up" data-aos-duration="2000" class="single-center">
+          <img src="images/artusinstall.jpg" alt="Képminimum installation" loading="lazy">
+        </div>
+      </div>
+
+      <hr class="project-divider">
+
+      <p class="project-title">Abandoned present, Janus Pannonius Museum, Pécs, 2025</p>
+      <p class="project-credits">Installation view from the work Lichen</p>
+      <p class="project-credits">Print on poliester, 3 m x 2,4 m</p>
+      
+      <div class="image-gallery subaquatica-gallery">
+        <div data-aos="fade-up" data-aos-duration="2000" class="single-center">
+          <img src="images/pecsinstall.jpg" alt="Abandoned present installation 1" loading="lazy">
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000" class="single-center">
+          <img src="images/pecsinstall1.jpg" alt="Abandoned present installation 2" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 50,
+      disable: 'mobile'
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

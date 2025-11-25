@@ -1,28 +1,51 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ábrahám Noémi</title>
     <link href="styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="index-page">
     <div class="top-right">
-        <a href="about.html">about</a>
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+        <label class="nav-toggle-label" for="nav-toggle" aria-label="open menu"></label>
+        <div class="nav-links">
+            <a href="about.html" class="about-link">about</a>
+        </div>
     </div>
-    <div class="bottom-left">
-        <a href="contact.html">contact</a>
-    </div>
-    <header>
-        <h1>Ábrahám Noémi</h1>
-        </nav>
-    </header>
-    <section> 
-        <a href="3D.html">3D</a>
-        <a href="lichen.html">lichen</a>
-        <a href="underconstruction.html">under construction</a>
-        <br>
+    <!-- Clickable image thumbnails - moved to top so they act as the page opening -->
+    <section>
+        <div class="thumbs hero-thumbs">
+            <a class="thumb" href="photography.html" title="Photography" data-aos="fade-up" data-aos-duration="2000">
+                <img src="images/haromd1.jpg" alt="photography thumbnail">
+                <span class="thumb-caption">Photography</span>
+            </a>
+
+            <a class="thumb" href="multimedia.html" title="Multimedia" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                <img src="images/subkep5.jpg" alt="multimedia thumbnail">
+                <span class="thumb-caption">Multimedia</span>
+            </a>
+            <a class="thumb" href="commissioned.html" title="Commissioned" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+                <img src="images/textil2.jpg" alt="commissioned">
+                <span class="thumb-caption">Commissioned</span>
+            </a>
+        </div>
     </section>
+
+    <header>
+        <h1><a href="index.html">Ábrahám Noémi</a></h1>
+    </header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        offset: 50,
+        disable: 'mobile'
+      });
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
 

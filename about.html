@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ábrahám Noémi</title>
     <link href="styles.css" rel="stylesheet">
 </head>
   <body class="about-page"> 
     <div class="top-right">
-        <a href="about.html">about</a>
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+      <label class="nav-toggle-label" for="nav-toggle" aria-label="open menu"></label>
+      <div class="nav-links">
+          <a href="about.html">about</a>
+        </div>
     </div>
     <header>
       <div>
@@ -17,40 +21,51 @@
         </h1>
       </div>
     </header>
+    <aside class="about-contact">
+      <p><a href="https://www.behance.net/nomelabrah419c" target="_blank">Behance</a></p>
+      <p><a href="https://instagram.com/noncsiabraham" target="_blank">Instagram</a></p>
+      <p>nomel.abraham@gmail.com</p>
+    </aside>
+    
     <section>
       <br>
-      <p>Studies:</p>
+      <p class="section-heading">Studies:</p>
       <p>2025 - Media Design MA, Moholy-Nagy University of Art and Design, Budapest, HU </p>
       <p>2020-2023 - Photography BA, Moholy-Nagy University of Art and Design, Budapest, HU </p>
       <p>2022-2023 - Photography BA, Erasmus Scholarship, Willem de Kooning Academy, Rotterdam, NL </p>
       <br>
-      <p>Memberships:
-      <p>2024 - Kővágóörs Creative Camp, Kővágóörs, HU</p>
+      <p class="section-heading">Memberships:</p>
+      <p><a href="https://www.kovagoorsalkototabor.hu/index.php?lang=eng&page=home" target="_blank">2024 - Kővágóörs Creative Camp, Kővágóörs, HU</a></p>
       <p><a href="https://www.ffs.hu/tagok/abraham-noemi" target="_blank">2024 - Studio of Young Photographers, Budapest, HU</a></p>
-      <p>2024 - Curatorial Collective, Fotogalerie Wien, Vienna, AT</p>
+      <p><a href="https://www.fotogaleriewien.at/en/" target="_blank">2024 - Curatorial Collective, Fotogalerie Wien, Vienna, AT</a></p>
       <br>
-      <p>Group exhibitions:</p>
-      <p>2025 - Abandoned present, Janus Pannonius Museum Gallery, Pécs, HU</p>
+      <p class="section-heading">Group exhibitions:</p>
+      <p><a href="https://www.ffs.hu/esemenyek/tokeletes-kezfogas-az-ffs-uj-tagjainak-bemutatkozo-kiallitasa" target="_blank">2025 - Perfect handshake, Telep Gallery, Budapest, HU</a></p>
+      <p><a href="https://www.ffs.hu/esemenyek/elhagyott-jelen-az-ffs-tagjainak-csoportos-kiallitasa-a-x-pecsi-fotobiennalen" target="_blank">2025 - Abandoned present, Janus Pannonius Museum Gallery, Pécs, HU</a></p>
       <p>2024 - Home-space, Double Rise Festival, Rimetea, RO</p>
       <p>2023 - Sandbox, Telep Gallery, Budapest, HU</p>
-      <p>2023 - Képminimum, Artus Studio, Budapest, HU</p>
+      <p><a href="https://designisso.com/2023/07/13/szinergiaszintek-frissdiplomas-fotosok-kepminimum-cimu-kiallitasa/" target="_blank">2023 - Képminimum, Artus Studio, Budapest, HU</a></p>
       <p>2023 - What is what, MOME, Budapest, HU</p>
       <p>2022 - Disspaced, De Sportkantine, Rotterdam, NL</p>
       <br>
-      <p>Solo exhibitions:</p>
+      <p class="section-heading">Solo exhibitions:</p>
       <p>2021 - Andiamo, Montázs Art Café, Budapest, HU</p>
       <p>2021 - Andiamo, Kelet Café and Gallery, Budapest, HU</p>
       <br>
-      <p>Screenings:</p>
-      <p>2025 - Intermezzo Festival, House of Music Hungary, Budapest, HU</p>
-      <p>2025 - Subaquatica, MOME Film Studio, Budapest, HU</p>
+      <p class="section-heading">Screenings:</p>
+      <p class="hover-preview" data-hover-image="images/mzh.jpg">2025 - Intermezzo Festival, House of Music Hungary, Budapest, HU</p>
+      <p class="hover-preview" data-hover-image="images/sub2.jpg">2025 - Subaquatica, MOME Film Studio, Budapest, HU</p>
       <br>
-      <p>Insternships:</p>
+      <p class="section-heading">Internships:</p>
       <p>2024-2025 - Treat Agency, intern, Vienna, AT</p>
       <p>2023-2024 - Fotogalerie Wien, curatorial trainee, Vienna, AT</p>
       <br>
-      <p>Publications:</p>
-      <p><a href="https://www.scaffoldingb8.com/scaffolding-b8-touch" target="_blank">2024 - Scaffolding B8, SS24, Touch, Rotterdam, NL</a></p>
+      <p class="section-heading">Publications:</p> 
+      <p class="hover-preview" data-hover-image="images/unnamed.jpg"><a href="https://www.scaffoldingb8.com/scaffolding-b8-touch" target="_blank">2024 - Scaffolding B8, SS24, Touch, Rotterdam, NL</a></p>
+      <br>
+      <br>
     </section>
+    <div id="cursor-follower" class="cursor-follower"></div>
+    <script src="script.js"></script>
   </body>
 </html>
