@@ -786,18 +786,21 @@ body.projects-page .image-gallery img {
 }
 
 body.projects-page .unnamed-gallery {
-  display: flex;
-  flex-wrap: nowrap;
+  display: flex !important;
+  flex-wrap: nowrap !important;
   justify-content: center;
-  gap: 20px;
+  gap: 20px !important;
   max-width: 1400px;
+  margin: 60px auto 30px !important;
 }
 
 body.projects-page .unnamed-gallery > div {
-  flex: 1 1 0;
-  width: calc(33.333% - 14px);
-  margin: 0;
-  align-self: flex-start;
+  flex: 1 1 0 !important;
+  width: calc(33.333% - 14px) !important;
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  align-self: flex-start !important;
 }
 
 body.projects-page .unnamed-gallery img {
