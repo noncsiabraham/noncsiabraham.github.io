@@ -681,6 +681,25 @@ body.page-3d .terra-gallery > div {
   max-width: calc(50% - 20px);
 }
 
+body.page-3d .terra-gallery .single-center {
+  flex: 0 1 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.page-3d .terra-gallery .single-center img {
+  max-height: 85vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
 /* Hessz gallery - 3 images in a row */
 body.page-3d .hessz-gallery > div {
   flex: 0 1 calc(33.333% - 27px);
