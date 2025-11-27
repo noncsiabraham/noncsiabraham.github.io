@@ -203,7 +203,62 @@ body.projects-page .top-right a.about-link::before {
     transform: translateY(-6px) scale(1.02);
 }
 
-/* Responsive tweaks: smaller fonts and spacing on narrow screens */
+/* Tablet responsive styles */
+@media (max-width: 900px) {
+    /* Show text navigation instead of circle on tablets */
+    .nav-toggle-label {
+        display: none;
+    }
+    
+    .nav-links {
+        display: inline-block;
+    }
+    
+    /* Reduce paragraph margins on tablets */
+    p {
+        margin-left: 30px;
+    }
+    
+    body.about-page section p {
+        margin-left: 40px;
+    }
+    
+    body.commissioned-page section p,
+    body.page-3d section p {
+        margin-left: 40px;
+    }
+    
+    body.commissioned-page .project-credits {
+        margin-left: 50px;
+    }
+    
+    /* Gallery adjustments for tablets - 2 column layout */
+    body.lichen-page .image-gallery > div,
+    body.commissioned-page .image-gallery > div,
+    body.projects-page .image-gallery > div {
+        width: calc(50% - 20px) !important;
+        margin-top: 0 !important;
+        align-self: flex-start !important;
+    }
+    
+    body.lichen-page .image-gallery,
+    body.commissioned-page .image-gallery,
+    body.projects-page .image-gallery {
+        gap: 20px;
+    }
+    
+    /* Two column galleries should stack on tablets */
+    body.page-3d .two-column-gallery {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    body.page-3d .two-column-gallery > div {
+        max-width: calc(50% - 10px);
+    }
+}
+
+/* Mobile responsive styles */
 @media (max-width: 520px) {
     :root {
         --site-title-size: 1.0rem;
@@ -224,49 +279,169 @@ body.projects-page .top-right a.about-link::before {
         padding-left: 12px;
     }
 
-    /* Hide inline links and show the toggle icon */
+    /* Show text navigation on mobile - no circle icon */
     .nav-toggle-label {
-        display: inline-block;
-    }
-    .nav-links {
         display: none;
     }
-    /* When checked, show menu as a small dropdown */
-    .nav-toggle:checked + .nav-toggle-label + .nav-links {
-        display: block;
-        position: absolute;
-        right: 12px;
-        top: 44px;
-        background: rgba(0,0,0,0.85);
-        padding: 8px 10px;
-        border-radius: 6px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.6);
-        text-align: right;
+    
+    .nav-links {
+        display: inline-block;
     }
+    
     .nav-links a {
-        display: block;
-        padding: 6px 0;
-        color: #ffffff;
+        display: inline;
+        margin-left: 8px;
+        font-size: 0.9rem;
     }
+    
     /* Mobile: ensure about-link remains visually larger than subpage items */
     body.lichen-page .nav-links a,
     body.page-3d .nav-links a,
-    body.commissioned-page .nav-links a {
-        font-size: 0.95rem;
+    body.commissioned-page .nav-links a,
+    body.projects-page .nav-links a {
+        font-size: 0.85rem;
     }
+    
     body.lichen-page .nav-links a.about-link,
     body.page-3d .nav-links a.about-link,
-    body.commissioned-page .nav-links a.about-link {
+    body.commissioned-page .nav-links a.about-link,
+    body.projects-page .nav-links a.about-link {
         font-size: var(--site-title-size);
     }
-    /* In the mobile dropdown hide the slash separator so it reads naturally */
-    body.lichen-page .nav-links a.about-link::before,
-    body.page-3d .nav-links a.about-link::before,
-    body.commissioned-page .nav-links a.about-link::before {
-        display: none;
+    
+    /* Reduce paragraph margins significantly on mobile */
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    .nav-links .top-right-sub {
-        margin-top: 2px;
+    
+    body.about-page section p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    body.commissioned-page section p,
+    body.page-3d section p,
+    body.projects-page section p {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+    }
+    
+    body.commissioned-page .project-credits {
+        margin-left: 20px;
+    }
+    
+    body.about-page p.section-heading {
+        margin-left: 20px;
+    }
+    
+    /* Single column galleries on mobile */
+    body.lichen-page .image-gallery,
+    body.commissioned-page .image-gallery,
+    body.projects-page .image-gallery {
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    body.lichen-page .image-gallery > div,
+    body.commissioned-page .image-gallery > div,
+    body.projects-page .image-gallery > div {
+        width: 100% !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        align-self: center !important;
+    }
+    
+    /* Multimedia page galleries - single column */
+    body.page-3d .image-gallery {
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    body.page-3d .image-gallery > div,
+    body.page-3d .terra-gallery > div,
+    body.page-3d .hessz-gallery > div {
+        flex: 0 1 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Two column galleries stack on mobile */
+    body.page-3d .two-column-gallery {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    body.page-3d .two-column-gallery > div {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+    
+    /* Unnamed gallery (3 images) stacks on mobile */
+    body.projects-page .unnamed-gallery {
+        flex-wrap: wrap !important;
+        gap: 15px !important;
+        padding: 0 15px;
+    }
+    
+    body.projects-page .unnamed-gallery > div {
+        flex: 0 1 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Reduce section padding on mobile */
+    body.page-3d section,
+    body.lichen-page section,
+    body.commissioned-page section,
+    body.projects-page section,
+    body.about-page section {
+        padding-bottom: 60px;
+    }
+    
+    /* Smaller dividers */
+    .project-divider {
+        margin: 40px auto;
+        max-width: 150px;
+    }
+    
+    /* Image credit alignment */
+    .image-credit {
+        padding: 0 15px;
+        text-align: center;
+    }
+    
+    /* Social icons positioning */
+    .social-icons {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    body.about-page .social-icons {
+        bottom: 50px;
+        right: 20px;
+    }
+    
+    /* Lightbox controls */
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        font-size: 40px;
+        padding: 10px;
+    }
+    
+    .lightbox-prev {
+        left: 10px;
+    }
+    
+    .lightbox-next {
+        right: 10px;
     }
 }
 
@@ -309,8 +484,6 @@ body.index-page {
     -o-background-size: cover;
     /* Ensure the body is at least the viewport height */
     min-height: 100vh;
-    height: 100vh;
-    overflow: hidden;
 }
 
 /* Clickable thumbnail gallery on index */
@@ -364,17 +537,40 @@ body.index-page {
         --site-title-size: 1.0rem;
         --hero-height: 40vh;
     }
-    .thumbs {
-        margin: 12px 16px;
-        gap: 18px;
-        flex-direction: column;
-        /* on mobile we don't keep a single hero block height; instead each thumb uses the hero height */
-        height: auto;
-        margin-top: calc((100vh - var(--hero-height)) / 2);
+    
+    body.index-page {
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        height: auto !important;
+        min-height: 100vh !important;
     }
+    
+    .thumbs {
+        margin: 80px 20px 40px !important;
+        gap: 30px !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        height: auto !important;
+        padding-bottom: 40px;
+    }
+    
     .thumb {
-        width: 100%;
-        height: var(--hero-height);
+        width: 100% !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px;
+    }
+    
+    .thumb img {
+        height: 50vh !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+    
+    .thumb-caption {
+        margin-top: 0;
+        font-size: 1rem;
     }
 }
 
