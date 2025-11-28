@@ -713,6 +713,13 @@ body.page-3d section p.section-heading {
 body.page-3d section p {
   margin-left: 100px;
   max-width: 600px;
+  font-size: 0.95rem;
+}
+
+body.page-3d section p.project-title {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-left: 100px;
 }
 
 /* Add bottom spacing for all pages */
