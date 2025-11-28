@@ -139,7 +139,7 @@
     showImage(currentIndex + 1);
   });
 
-  // Close lightbox
+  // Close lightbox 
   function closeLightbox(){
     lightbox.classList.remove('active');
   }
