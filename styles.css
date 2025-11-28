@@ -205,13 +205,49 @@ body.projects-page .top-right a.about-link::before {
 
 /* Tablet responsive styles */
 @media (max-width: 900px) {
-    /* Show text navigation instead of circle on tablets */
+    /* Show only white circle on tablets */
     .nav-toggle-label {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        cursor: pointer;
+        position: relative;
+    }
+    
+    /* Hide all navigation links by default */
+    .nav-links {
         display: none;
     }
     
-    .nav-links {
-        display: inline-block;
+    /* Show dropdown menu when circle is clicked */
+    .nav-toggle:checked + .nav-toggle-label + .nav-links {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 44px;
+        background: rgba(0,0,0,0.85);
+        padding: 8px 10px;
+        border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+        text-align: right;
+    }
+    
+    .nav-toggle:checked + .nav-toggle-label + .nav-links a {
+        display: block;
+        padding: 6px 0;
+        color: #ffffff;
+        font-size: 0.95rem;
+    }
+    
+    .nav-toggle:checked + .nav-toggle-label + .nav-links a.about-link {
+        font-size: var(--site-title-size);
+    }
+    
+    .nav-toggle:checked + .nav-toggle-label + .nav-links a.about-link::before {
+        display: none;
     }
     
     /* Reduce paragraph margins on tablets */
@@ -279,34 +315,83 @@ body.projects-page .top-right a.about-link::before {
         padding-left: 12px;
     }
 
-    /* Show text navigation on mobile - no circle icon */
+    /* Show only white circle on mobile */
     .nav-toggle-label {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        cursor: pointer;
+        position: relative;
+    }
+    
+    /* Hide all navigation links by default */
+    .nav-links {
         display: none;
     }
     
-    .nav-links {
-        display: inline-block;
+    /* Show dropdown menu when circle is clicked */
+    .nav-toggle:checked + .nav-toggle-label + .nav-links {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 44px;
+        background: rgba(0,0,0,0.85);
+        padding: 8px 10px;
+        border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+        text-align: right;
     }
     
-    .nav-links a {
-        display: inline;
-        margin-left: 8px;
+    .nav-toggle:checked + .nav-toggle-label + .nav-links a {
+        display: block;
+        padding: 6px 0;
+        color: #ffffff;
         font-size: 0.9rem;
     }
     
-    /* Mobile: ensure about-link remains visually larger than subpage items */
-    body.lichen-page .nav-links a,
-    body.page-3d .nav-links a,
-    body.commissioned-page .nav-links a,
-    body.projects-page .nav-links a {
-        font-size: 0.85rem;
+    .nav-toggle:checked + .nav-toggle-label + .nav-links a.about-link {
+        font-size: var(--site-title-size);
     }
     
-    body.lichen-page .nav-links a.about-link,
-    body.page-3d .nav-links a.about-link,
-    body.commissioned-page .nav-links a.about-link,
-    body.projects-page .nav-links a.about-link {
+    .nav-toggle:checked + .nav-toggle-label + .nav-links a.about-link::before {
+        display: none;
+    }
+    
+    /* Show dropdown menu when toggle is checked */
+    .nav-toggle:checked + .nav-toggle-label + .nav-links {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: 44px;
+        background: rgba(0,0,0,0.85);
+        padding: 8px 10px;
+        border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+        text-align: right;
+    }
+    
+    .nav-toggle:checked + .nav-toggle-label + .nav-links a {
+        display: block !important;
+        padding: 6px 0;
+        color: #ffffff;
+        font-size: 0.9rem;
+        text-indent: 0;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    .nav-toggle:checked + .nav-toggle-label + .nav-links a.about-link {
         font-size: var(--site-title-size);
+    }
+    
+    .nav-toggle:checked + .nav-toggle-label + .nav-links a.about-link::before {
+        display: none;
     }
     
     /* Reduce paragraph margins significantly on mobile */
