@@ -762,13 +762,13 @@ body.page-3d .image-gallery > div {
 
 /* Terra gallery - 2 images per row */
 body.page-3d .terra-gallery > div {
-  flex: 0 1 calc(50% - 20px);
-  max-width: calc(50% - 20px);
+  flex: 0 1 calc(45% - 20px);
+  max-width: calc(45% - 20px);
 }
 
 body.page-3d .terra-gallery .single-center {
-  flex: 0 1 100%;
-  max-width: 100%;
+  flex: 0 1 90%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -777,7 +777,7 @@ body.page-3d .terra-gallery .single-center {
 }
 
 body.page-3d .terra-gallery .single-center img {
-  max-height: 85vh;
+  max-height: 75vh;
   width: auto;
   max-width: 100%;
   object-fit: contain;
