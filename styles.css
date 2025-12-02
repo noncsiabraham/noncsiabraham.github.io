@@ -1,7 +1,9 @@
-/* Use local Bahnschrift where available, fall back to system sans-serifs */
+/* Use Opening Hours Sans font */
 @font-face {
-    font-family: 'BahnschriftLocal';
-    src: local('Bahnschrift'), local('Bahnschrift Regular');
+    font-family: 'OpeningHoursSans';
+    src: url('fonts/opening-hours-sans-main/opening-hours-sans-main/fonts/OpeningHoursSans-Regular.woff2') format('woff2'),
+        url('fonts/opening-hours-sans-main/opening-hours-sans-main/fonts/OpeningHoursSans-Regular.woff') format('woff'),
+        url('fonts/opening-hours-sans-main/opening-hours-sans-main/fonts/OpeningHoursSans-Regular.otf') format('opentype');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -15,11 +17,45 @@
 
 /* Shared styles */
 * {
-    font-family: 'BahnschriftLocal', 'Bahnschrift', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'OpeningHoursSans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 nav {
     text-align: left;
+}
+
+/* About page navigation - display inline in header */
+body.about-page .top-right {
+    position: static;
+    display: inline;
+}
+
+body.about-page .nav-toggle,
+body.about-page .nav-toggle-label {
+    display: none;
+}
+
+body.about-page .nav-links {
+    position: static;
+    display: inline;
+    background: none;
+    padding: 0;
+    font-size: 0.85rem;
+}
+
+body.about-page .nav-links a {
+    color: #ffffff;
+    margin: 0 8px;
+    font-size: 0.95rem;
+}
+
+body.about-page .nav-links a.about-link {
+    font-size: var(--site-title-size);
+}
+
+body.about-page .nav-separator {
+    color: #ffffff;
+    margin: 0 8px;
 }
 
 body {
