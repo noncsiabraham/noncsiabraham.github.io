@@ -1,11 +1,33 @@
-/* Use Opening Hours Sans font */
+/* Use Aspekta font */
 @font-face {
-    font-family: 'OpeningHoursSans';
-    src: url('fonts/opening-hours-sans-main/opening-hours-sans-main/fonts/OpeningHoursSans-Regular.woff2') format('woff2'),
-        url('fonts/opening-hours-sans-main/opening-hours-sans-main/fonts/OpeningHoursSans-Regular.woff') format('woff'),
-        url('fonts/opening-hours-sans-main/opening-hours-sans-main/fonts/OpeningHoursSans-Regular.otf') format('opentype');
+    font-family: 'Aspekta';
+    src: url('fonts/aspekta-main/packages/fonts/variable/AspektaVF.woff2') format('woff2-variations');
+    font-style: normal;
+    font-weight: 100 1000;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspekta';
+    src: url('fonts/aspekta-main/packages/fonts/webfonts/Aspekta-400.woff2') format('woff2');
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspekta';
+    src: url('fonts/aspekta-main/packages/fonts/webfonts/Aspekta-500.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aspekta';
+    src: url('fonts/aspekta-main/packages/fonts/webfonts/Aspekta-600.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
     font-display: swap;
 }
 
@@ -17,7 +39,7 @@
 
 /* Shared styles */
 * {
-    font-family: 'OpeningHoursSans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Aspekta', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 nav {
