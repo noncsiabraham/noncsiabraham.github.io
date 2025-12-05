@@ -1308,7 +1308,14 @@ body.about-page section p a:hover {
 
 /* Blur effect for all links across all pages */
 a {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 2px;
   transition: filter 0.6s ease;
+}
+
+header a {
+  text-decoration: none;
 }
 
 a:hover {
