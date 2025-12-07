@@ -605,6 +605,8 @@ body.index-page {
     -o-background-size: cover;
     /* Ensure the body is at least the viewport height */
     min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* Clickable thumbnail gallery on index */
@@ -618,6 +620,7 @@ body.index-page {
     height: var(--hero-height);
     /* position hero higher so it's visible without scrolling */
     margin: 40px auto 0;
+    padding: 0 20px;
 }
 
 .thumb {
@@ -748,14 +751,14 @@ body.page-3d section p.section-heading {
 
 body.page-3d section p {
   margin-left: 100px;
-  max-width: 600px;
+  max-width: 900px;
   font-size: 0.95rem;
 }
 
 body.page-3d section p.project-title {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 
 /* Add bottom spacing for all pages */
@@ -1044,9 +1047,9 @@ body.commissioned-page .project-credits {
 }
 
 body.commissioned-page .project-title {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 
 /* Projects page styles - centered text */
